@@ -1,0 +1,25 @@
+{
+  "name": "yehat-back-0",
+  "version": "1.0.0",
+  "description": "Yehat Beta 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kotoOo/Yehat-Front-0.git"
+  },
+  "keywords": [
+    "Yehat",
+    "Desktop",
+    "ZII",
+    "ECS"
+  ],
+  "author": "Koto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kotoOo/Yehat-Front-0/issues"
+  },
+  "homepage": "https://github.com/kotoOo/Yehat-Front-0#readme"
+}
