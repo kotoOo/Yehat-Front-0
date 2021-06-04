@@ -1,0 +1,1 @@
+quasar serve ./dist/spa/ --history --port 4980

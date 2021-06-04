@@ -1,0 +1,119 @@
+- Install Quasar@Next (Beta v3.0.0-beta.25)
+  - Upgrade NodeJS to v14.17.0
+- npm install
+- [Refactor] imports "@vue/composition-api" => "vue"
+- [Refactor] Vue `set` ain't in use anymore
+- [Refactor] /deep/ SCSS modifier now should be ::v-deep(...)
+- in App.vue:
+  - import ZIITable3
+  - added to template
+  - added to components
+  - provide "app" state
+
+[ 14:00 ]
+
+- installed Socket.IO as a local library, added as a dependency to yehat.js
+
+Looks like Yehat is running w/o a single widget on the table, not sure why. At
+least runYehat() is working in the browser console and I see some log messages
+from ECS!
+
+/* Full log at this point */
+[HMR] Waiting for update signal from WDS...
+loader.js?3e1a:15 Filename: ./ICargo.vue
+loader.js?3e1a:15 Filename: ./IEntityEdit.vue
+loader.js?3e1a:15 Filename: ./IGymbal0.vue
+loader.js?3e1a:15 Filename: ./ILoader.vue
+loader.js?3e1a:15 Filename: ./INavigation.vue
+loader.js?3e1a:15 Filename: ./IProperties.vue
+loader.js?3e1a:15 Filename: ./IRoom0.vue
+loader.js?3e1a:15 Filename: ./ISOBox0.vue
+loader.js?3e1a:15 Filename: ./IStory0.vue
+loader.js?3e1a:15 Filename: ./ITimer.vue
+loader.js?3e1a:15 Filename: ./IUnit.vue
+loader.js?3e1a:39 Autoloaded: ICargo
+loader.js?3e1a:39 Autoloaded: IEntityEdit
+loader.js?3e1a:39 Autoloaded: IGymbal0
+loader.js?3e1a:39 Autoloaded: ILoader
+loader.js?3e1a:39 Autoloaded: INavigation
+loader.js?3e1a:39 Autoloaded: IProperties
+loader.js?3e1a:39 Autoloaded: IRoom0
+loader.js?3e1a:39 Autoloaded: ISOBox0
+loader.js?3e1a:39 Autoloaded: IStory0
+loader.js?3e1a:39 Autoloaded: ITimer
+loader.js?3e1a:39 Autoloaded: IUnit
+loader.js?3e1a:39 Autoloaded: PLAppStatus
+loader.js?3e1a:39 Autoloaded: PLPanel0
+loader.js?3e1a:39 Autoloaded: PLShardLog0
+loader.js?3e1a:39 Autoloaded: PLUserList
+loader.js?3e1a:39 Autoloaded: PLWebSocket
+ZIITable3.vue?6b54:85 useLoader ({
+  id,
+  rel
+}) => {
+  return (0,_index__WEBPACK_IMPORTED_MODULE_0__.loadItem)([(0,_index__WEBPACK_IMPORTED_MODULE_0__.Located)({
+    rel,
+    pos: [0, 0, 0],
+    size: [10, 15]
+  }), (0,_index__WE…
+client-entry.js?2f39:45 [Quasar] Running SPA.
+yehat.js?cc46:100 Running yehat...
+yehat.js?cc46:37 [Yehat]Connecting to Yehat Beta I WebSocket Server 127.0.0.1 80
+yehat.js?cc46:174 socket f {receiveBuffer: Array(0), sendBuffer: Array(0), ids: 0, acks: {…}, flags: {…}, …}
+ecs.js?e212:166 [ECS]Entity Loader methods bound 8
+ecs.js?e212:166 [ECS]Entity Info Panel methods bound 2
+ecs.js?e212:166 [ECS]Entity ToDo methods bound 8
+ecs.js?e212:166 [ECS]Entity Info Dash methods bound 2
+ecs.js?e212:166 [ECS]Entity Entity Editor methods bound 2
+ecs.js?e212:166 [ECS]Entity Gymbal MK 1 methods bound 2
+gymbal0.js?c031:76 gymb0 Proxy {id: "44a4feb2-c146-4886-9b8c-1f0a3055acbc", located: {…}, item: {…}, drag: {…}, activity: {…}, …}
+ecs.js?e212:166 [ECS]Entity IsoBox 0 methods bound 2
+ecs.js?e212:166 [ECS]Entity No-Name-0 methods bound 3
+ecs.js?e212:166 [ECS]Entity Isometric Unit methods bound 2
+ecs.js?e212:166 [ECS]Entity PL App Status MK 1 methods bound 2
+ecs.js?e212:166 [ECS]Entity Yehat Websocket MK 1 methods bound 2
+ecs.js?e212:166 [ECS]Entity Yehat Panel Lvl 1 methods bound 2
+ecs.js?e212:166 [ECS]Entity Yehat Direct Entity Browser methods bound 2
+ecs.js?e212:166 [ECS]Entity PropertyList Area UserList Lvl 1 methods bound 2
+ecs.js?e212:166 [ECS]Entity Yehat ShardLog Lvl 0 methods bound 2
+ecs.js?e212:166 [ECS]Entity ZII Table 3 methods bound 1
+index.js?a29e:3210 [webpack-dev-server] Hot Module Replacement enabled.
+index.js?a29e:3210 [webpack-dev-server] Live Reloading enabled.
+socket.io.min.js?d7a7:6 WebSocket connection to 'ws://127.0.0.1/socket.io/?EIO=4&transport=websocket' failed: 
+value @ socket.io.min.js?d7a7:6
+value @ socket.io.min.js?d7a7:6
+value @ socket.io.min.js?d7a7:6
+l @ socket.io.min.js?d7a7:6
+t.exports @ socket.io.min.js?d7a7:6
+value @ socket.io.min.js?d7a7:6
+y @ socket.io.min.js?d7a7:6
+c @ socket.io.min.js?d7a7:6
+connectIO @ yehat.js?cc46:159
+runYehat @ yehat.js?cc46:194
+setup @ App.vue?3dfd:14
+callWithErrorHandling @ runtime-core.esm-bundler.js?9e79:154
+setupStatefulComponent @ runtime-core.esm-bundler.js?9e79:6542
+setupComponent @ runtime-core.esm-bundler.js?9e79:6503
+mountComponent @ runtime-core.esm-bundler.js?9e79:4206
+processComponent @ runtime-core.esm-bundler.js?9e79:4182
+patch @ runtime-core.esm-bundler.js?9e79:3791
+render @ runtime-core.esm-bundler.js?9e79:4883
+mount @ runtime-core.esm-bundler.js?9e79:3077
+app.mount @ runtime-dom.esm-bundler.js?8886:1259
+start @ client-entry.js?2f39:67
+yehat.js?cc46:37 [Yehat]Socket IO Error Error: websocket error
+    at a.value (socket.io.min.js?d7a7:6)
+    at WebSocket.ws.onerror (socket.io.min.js?d7a7:6) websocket error
+
+------------------------------------------------------------------------------------------------------------------------
+*/
+
+So far: 
+
+Autoloader [ Working ]
+
+
+
+[ 16:00 ] Rewrote loader to be a Quasar Boot File. Installed Vue 3, looks like Q3 ain't come with it...
+
+This is the first time we've got Yehat Table 3 renderred, still with warnings in the console.

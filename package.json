@@ -1,25 +1,39 @@
 {
-  "name": "yehat-back-0",
-  "version": "1.0.0",
-  "description": "Yehat Beta 1",
-  "main": "index.js",
+  "name": "yehat-front-0",
+  "version": "0.0.1",
+  "description": "Small and Fast Dataspaceship ",
+  "productName": "Yehat Beta 1",
+  "author": "Koto <35264976+kotoOo@users.noreply.github.com>",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified\" && exit 0",
+    "build": "quasar build",
+    "serve": "./shell/serve.cmd"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kotoOo/Yehat-Front-0.git"
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "core-js": "^3.6.5",
+    "mitt": "^2.1.0",
+    "quasar": "^2.0.0-beta.1",
+    "vue": "^3.0.11"
   },
-  "keywords": [
-    "Yehat",
-    "Desktop",
-    "ZII",
-    "ECS"
+  "devDependencies": {
+    "@quasar/app": "^3.0.0-beta.1"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
   ],
-  "author": "Koto",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kotoOo/Yehat-Front-0/issues"
-  },
-  "homepage": "https://github.com/kotoOo/Yehat-Front-0#readme"
+  "engines": {
+    "node": ">= 12.22.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
 }

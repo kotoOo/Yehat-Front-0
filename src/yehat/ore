@@ -1,0 +1,4 @@
+console.log(
+`      .icon-01 { 52x50 }
+      .icon-02 { 53x53 }
+      .icon-03 { 44x40 }`.replaceAll(/\s+(\d+)x(\d+)\s+/gm, (s, a, b, pos) => `width: ${a}px;\nheight: ${b}px;\n`))
